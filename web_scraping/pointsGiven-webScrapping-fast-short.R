@@ -190,10 +190,10 @@ colnames(df) <- c("Voting", "Voted", "Year", "Jury.or.televoting", "Points.given
                   "Mean.countries.taking.part")
 
 dfTmp <- cbind(ID = 1:nrow(df), df)
-write.csv2(dfTmp, "../data/new/points_given_without_contests_together_small.csv", row.names = F)
+write.csv2(dfTmp, "C:/Users/koste/Studia/08/BD2/DWH-Eurovision/data/new/points_given_without_contests_together_small.csv", row.names = F, quote = F)
 
 ### 10. New measure - contests together
-df2 <- df
+df2 <- df # <- dfTmp
 df2$Contests.when.voted.in.finals.and.voting.takes.part <- 0
 counter <- 0
 for (from in all_countries){
@@ -207,8 +207,8 @@ for (from in all_countries){
     how_many_contests_together <- length(intersect(years_when_country_in_esc_splitted[[1]], years_when_country_in_finals_splitted[[1]]))
     
     for(i in 1:nrow(df2))
-      if(from == df2[i,]$From.country)
-        if(to == df2[i,]$To.country)
+      if(from == df2[i,]$Voting)
+        if(to == df2[i,]$Voted)
           df2$Contests.when.voted.in.finals.and.voting.takes.part[i] <- how_many_contests_together
     if(counter == 21) # uncomment for testing [long time]
       break # uncomment for testing [long time]
@@ -219,4 +219,4 @@ for (from in all_countries){
 # sample_n(df2, 100) # uncomment for testing [long time]
 
 df2 <- cbind(ID = 1:nrow(df2), df2)
-write.csv2(df2, "../data/new/points_given_small.csv", row.names = F)
+write.csv2(df2, "C:/Users/koste/Studia/08/BD2/DWH-Eurovision/data/new/points_given_small.csv", row.names = F, quote = F)

@@ -1,2 +1,2 @@
 @echo off
-"C:\Program Files\R\R-3.6.1\bin\Rscript.exe" C:\Users\Patryk\Desktop\eurovision-webScraping.R
+"C:\Program Files\R\R-4.0.2\bin\Rscript.exe" C:\Users\koste\Studia\08\BD2\DWH-Eurovision\web_scraping\jury-webScraping.R

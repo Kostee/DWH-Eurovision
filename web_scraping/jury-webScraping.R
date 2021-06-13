@@ -12,11 +12,12 @@ df <- df %>% select(event.year, Country.of.jury, Member.id, Gender, Date.of.birt
 colnames(df) <- c("year", "country_of_jury", "member_id", "gender", "birthdate")
 
 #unique(df$country_of_jury)
-df$country_of_jury[df$country_of_jury == "Czech-Republic"] <- "Czech Republic"
+df$country_of_jury[df$country_of_jury == "Czech-republic"] <- "Czech Republic"
 df$country_of_jury[df$country_of_jury == "Fyr-macedonia"] <- "Macedonia"
 df$country_of_jury[df$country_of_jury == "United-kingdom"] <- "United Kingdom"
 df$country_of_jury[df$country_of_jury == "San-marino"] <- "San Marino"
 df$country_of_jury[df$country_of_jury == "Bosnia-herzegovina"] <- "Bosnia and Herzegovina"
+df$country_of_jury[df$country_of_jury == "The-netherlands"] <- "The Netherlands"
 
 df$whichContest = 'tbc'
 whichContestsModulo = 1
@@ -76,13 +77,18 @@ res <- res %>%
 ### change column names
 colnames(res) <- c("Year", "Country.of.jury", "Male.count", "Mean.age.category")
 
-points_given <- read.csv2("../data/new/points_given.csv")
+points_given <- read.csv2("C:/Users/koste/Studia/08/BD2/DWH-Eurovision/data/new/points_given.csv")
 points_given <- select(points_given, c("Year", "Voting")) %>%
   unique()
 res <- merge(res, points_given, all.y = TRUE, by.x = c("Year", "Country.of.jury"), by.y = c("Year", "Voting")) %>%
   select(Year, Country.of.jury, Male.count, Mean.age.category)
 res[is.na(res)] <- "Unknown"
 
-write.csv2(res, "../data/new/jury.csv", row.names = F)
+#df$country_of_jury
 
+write.csv2(res, "C:/Users/koste/Studia/08/BD2/DWH-Eurovision/data/new/jury.csv", row.names = F, quote = F)
+
+
+#print("SUCCESS")
+#Sys.sleep(1000)
 

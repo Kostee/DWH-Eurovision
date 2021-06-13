@@ -1117,7 +1117,7 @@ Year;Country.of.jury;Male.count;Mean.age.category
 2016;Bulgaria;3;Old
 2016;Croatia;2;Young
 2016;Cyprus;2;Middle
-2016;Czech Republic;Unknown;Unknown
+2016;Czech Republic;3;Very old
 2016;Denmark;3;Old
 2016;Estonia;2;Old
 2016;Finland;3;Young
@@ -1145,7 +1145,7 @@ Year;Country.of.jury;Male.count;Mean.age.category
 2016;Spain;3;Very young
 2016;Sweden;3;Very young
 2016;Switzerland;3;Very young
-2016;The Netherlands;Unknown;Unknown
+2016;The Netherlands;2;Very old
 2016;Ukraine;3;Old
 2016;United Kingdom;3;Middle
 2017;Albania;3;Middle
@@ -1158,7 +1158,7 @@ Year;Country.of.jury;Male.count;Mean.age.category
 2017;Bulgaria;2;Old
 2017;Croatia;3;Middle
 2017;Cyprus;3;Middle
-2017;Czech Republic;Unknown;Unknown
+2017;Czech Republic;3;Middle
 2017;Denmark;2;Middle
 2017;Estonia;3;Young
 2017;Finland;3;Middle
@@ -1187,7 +1187,7 @@ Year;Country.of.jury;Male.count;Mean.age.category
 2017;Spain;3;Young
 2017;Sweden;3;Middle
 2017;Switzerland;3;Old
-2017;The Netherlands;Unknown;Unknown
+2017;The Netherlands;3;Old
 2017;Ukraine;3;Middle
 2017;United Kingdom;2;Old
 2018;Albania;3;Middle
@@ -1200,7 +1200,7 @@ Year;Country.of.jury;Male.count;Mean.age.category
 2018;Bulgaria;2;Old
 2018;Croatia;3;Old
 2018;Cyprus;3;Middle
-2018;Czech Republic;Unknown;Unknown
+2018;Czech Republic;3;Middle
 2018;Denmark;2;Young
 2018;Estonia;3;Young
 2018;Finland;2;Middle
@@ -1230,7 +1230,7 @@ Year;Country.of.jury;Male.count;Mean.age.category
 2018;Spain;2;Very young
 2018;Sweden;2;Young
 2018;Switzerland;3;Middle
-2018;The Netherlands;Unknown;Unknown
+2018;The Netherlands;3;Old
 2018;Ukraine;3;Young
 2018;United Kingdom;2;Very young
 2019;Albania;Unknown;Unknown
